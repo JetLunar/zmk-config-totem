@@ -3,17 +3,17 @@
 
 if SHIELD_TOTEM_LEFT
 
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+    
 config ZMK_KEYBOARD_NAME
     default "TOTEM"
     
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-endif
+endif SHIELD_TOTEM_LEFT
 
 if SHIELD_TOTEM_LEFT || SHIELD_TOTEM_RIGHT
 
 config ZMK_SPLIT
     default y
 
-endif
+endif SHIELD_TOTEM_LEFT || SHIELD_TOTEM_RIGHT
